@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    cursor: default;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    width: 75px;
+    height: 75px;
+    transition: 0.2s;
+    border-radius: 50px;
+}
+
+.logo:hover {
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+
+.navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9D9D9; 
+    backdrop-filter: blur(1px); 
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 2;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    color: rgb(0, 0, 0);
+    padding-right:2% ;
+    padding-left:2% ;
+    user-select: none;
+    height: 81px;
+    line-height: 81px;
+    transition: 0.3s;
+}
+
+.menu-toggle:hover {
+    height: 81px;
+    color: #F8AC2E;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 225px;
+    height: 100%;
+    background-color: #D9D9D9;
+    transition: right 0.2s ease;
+    padding-top: 5%;
+    z-index: 1;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-right:0%;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    padding-right: 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f39c12;
+    color:#fff;
+}
+
+@media (max-width: 768px) {
+    .navbar .logo a {
+        font-size: 20px;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.hero-section {
+    background-image: url('smk1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.textbar h1 {
+    font-size: 48px;
+    font-weight: 600;
+    text-shadow: 0px 0px 30px #000000;
+}
+
+.hero-section p {
+    font-size: 27px;
+    text-shadow: 0px 0px 30px #000000;
+}
+
+.about-section, .program-section, .news-section {
+    padding: 60px 20px;
+}
+
+.about-section h2, .program-section h2, .news-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+.about-section .content, .program-section .content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-section img, .program-section img {
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-section .news-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.h3content {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.content:hover {
+    scale: 1.05;
+}
+
+.news-card {
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.news-card:hover {
+    scale: 1.05;
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-card .news-content {
+    padding: 15px;
+}
+
+.news-card .news-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footerrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #2C3E50;
+    height: 200px;
+    padding-left: 10%;
+    margin: 0%;
+    margin-top: 5%;
+}
+
+.footerrow hr {
+    border-left: 1px solid #fff;
+    height: 80%;
+    margin: 0;
+}
+
+.footerrow hr:nth-of-type(2) {
+    border-left: 1px solid #fff;
+    height: 80%;
+    margin: 0;
+    margin-left: 5%;
+}
+
+.footerrow img {
+    width: 100px;
+    height: 100px;
+    padding-right: 5%;
+}
+
+.footerp {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 90%;
+    color:#ffffff;
+    font-size: 16px;
+    margin-top: 1%;
+}
+
+.footerp2 {
+    padding-left: 5%;
+    height: 90%;
+    color:#ffffff;
+    font-size: 16px;
+    margin-top: 1%;
+}

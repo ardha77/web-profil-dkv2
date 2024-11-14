@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #009999, #FF0066, #FFCC33);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+    cursor: default;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.flexcenter {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 66px;
+}
+
+.flexcenter hr {
+    margin-left: 100px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 150px;
+    border: 0.1px solid #ffffff80;
+}
+
+.flex {
+    display:flex;
+    max-width: 950px;
+    height: 550px;
+    border:3px #ffffffa0 solid;
+    border-radius: 25px;
+}
+
+h2 {
+    color: #ffffff;
+    padding-top: 5%;
+}
+
+.inputform {
+    display:flex;
+    flex-direction: column;
+    width: 409px;
+}
+
+.inputform input {
+    margin-bottom: 5%;
+}
+
+.labelsignup {
+    text-align: center;
+    margin-top: 12%;
+    font-size: 16px;
+    margin-left: 0;
+    width: 350px;
+    color: #ffffff;
+}
+
+.register {
+    color: #001aff;
+}
+
+.button {
+    width: 350px;
+    height: 40px;
+    background-color: #ffffffa0;
+    border: transparent;
+    border-radius: 10px;
+    color:#000000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border:1px solid #ffffffa0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 1.5px solid #ffffffa0;
+    box-sizing: border-box;
+    background-color: transparent;
+    color:#ffffff;
+    width:350px;
+    margin:5px 0;
+    font-size: 16px;
+    height: 44px;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+input[type="email"] {
+    background-image: url('https://img.icons8.com/?size=100&id=eBEo6FOQZ3v4&format=png&color=ffffff');
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  padding-left: 50px;
+}
+
+input[type="password"] {
+    background-image: url('https://img.icons8.com/?size=100&id=15437&format=png&color=ffffff');
+    background-position: 8px center;
+    background-repeat: no-repeat;
+    background-size: 27px 27px;
+    padding-left: 50px;
+    width:300px;
+}
+
+input[type="text"] {
+    background-image: url('https://img.icons8.com/?size=100&id=15437&format=png&color=ffffff');
+    background-position: 8px center;
+    background-repeat: no-repeat;
+    background-size: 27px 27px;
+    padding-left: 50px;
+    width:300px;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 1.5px solid #ffffff; /* Ubah warna border menjadi putih */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input::placeholder {
+    color:#ffffffa0;
+    font-size: 16px;
+}
+
+
+.pswgroup{
+    display: flex;
+    flex-direction: row;
+}
+
+.pswgroup input[type="password"]:focus + img,
+.pswgroup input[type="text"]:focus + img {
+    border-color: #ffffff;
+}
+
+.pswgroup img {
+    width: 50px;
+    height: 44px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1.5px solid #ffffffa0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+}
+
+
+.rememberandforgot {
+    display:flex;
+    flex-direction: row;
+    font-size: smaller;
+    padding-top: 2%;
+}
+
+.rememberandforgot input[type="checkbox"] {
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-top: 1px;
+    appearance: none; /* Menghapus default browser */
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffffa0; /* Warna border */
+    border-radius: 5px;
+    background-color: transparent; /* Transparan sebelum dicentang */
+    cursor: pointer;
+    position: relative;
+    transition: 0.1s;
+}
+
+.rememberandforgot input[type="checkbox"]:checked {
+    background-color: #ffffffa0;
+    border:transparent;
+}
+
+.rememberandforgot input[type="checkbox"]:checked::after {
+    content: "✓"; /* Tanda centang */
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    font-size: 14px;
+    color: black; /* Warna centang */
+}
+
+.forgot {
+    margin-left: 100px;
+    color: #001aff;
+}
+
+.buttonsocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+}
+
+.buttonsocial button {
+    width: 350px;
+    height: 40px;
+    background-color: #ffffff50;
+    border:1px transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+    color:transparent;
+}
+
+.buttonsocial button:hover {
+    background-color: transparent;
+    border: 1px solid #ffffffa0;
+    color:#fff;
+    background-image: url('');
+
+}
+
+.buttoninsocial1 {
+    background-image: url('https://img.icons8.com/?size=100&id=17949&format=png&color=000000');
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.banner {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:10%;
+    padding-right:10%;
+    background-color: #ffffffa0;
+    border-bottom-right-radius: 22px;
+    border-top-right-radius: 22px;
+    width:475px;
+}
+
+.bannergroup {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner p {
+    color:#000000;
+    font-size: 32px;
+    font-weight:bold;
+}
+
+.banner img {
+    width: 150px;
+    margin-bottom: 5%;
+}
